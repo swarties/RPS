@@ -24,7 +24,9 @@ btns.forEach(btn => {
   btn.onclick = () => {
     const response = document.querySelector('#datH2');
     response.textContent = "...";
-    response.textContent = playRound(btn.textContent.slice(3),getComputerChoice());
+    setTimeout(() => {
+        response.textContent = playRound(btn.textContent.slice(3),getComputerChoice());
+            }, 150);
     let textHumanScore = document.querySelector('#you');
     textHumanScore.textContent = "You : " + HumanScore;
 
