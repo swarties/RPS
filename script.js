@@ -33,7 +33,7 @@ btns.forEach(btn => {
 
     if (HumanScore == 5) {
         response.textContent = "You Win! Score will reset!"
-        setTimeout(function() {
+        setTimeout(() => {
         HumanScore = 0;
         ComputerScore = 0;
         textRobotScore.textContent = "Robot : " + ComputerScore;
